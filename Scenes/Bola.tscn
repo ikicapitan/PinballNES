@@ -1,0 +1,120 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Bola.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/bolayotros.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 8.4122
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "idle"
+length = 0.01
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.7445, 1.50925 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+
+resource_name = "puium"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+
+[node name="Bola" type="RigidBody2D" groups=[
+"bola",
+]]
+
+position = Vector2( -57.9806, -194.357 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+mode = 0
+mass = 0.01
+friction = 0.0
+bounce = 0.3
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 2
+contacts_reported = 3
+contact_monitor = true
+sleeping = false
+can_sleep = true
+linear_velocity = Vector2( 0, 0 )
+linear_damp = -1.0
+angular_velocity = 0.0
+angular_damp = -1.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Angular", "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( -0.644141, 1.0015 )
+scale = Vector2( 1.7445, 1.50925 )
+texture = ExtResource( 2 )
+hframes = 7
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( -0.197517, 0 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="." index="2"]
+
+rect = Rect2( -10, -10, 20, 20 )
+
+[node name="animacion" type="AnimationPlayer" parent="." index="3"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/idle = SubResource( 2 )
+anims/puium = SubResource( 3 )
+blend_times = [  ]
+
+[connection signal="body_entered" from="." to="." method="_on_Bola_body_entered"]
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+
+

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Pinball (1984-02-02)(Nintendo R&D1)(Nintendo) [13].wav-f17dba817a24bb05631a56046467a7bd.sample"
+
+[deps]
+
+source_file="res://SFX/Pinball (1984-02-02)(Nintendo R&D1)(Nintendo) [13].wav"
+source_md5="0e5bd98df0e1d68c25c0bfa766b4a6a7"
+
+dest_files=[ "res://.import/Pinball (1984-02-02)(Nintendo R&D1)(Nintendo) [13].wav-f17dba817a24bb05631a56046467a7bd.sample" ]
+dest_md5="5ca67ae5eefb5e0d82bb05d27c518d25"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

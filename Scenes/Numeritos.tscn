@@ -1,0 +1,211 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Numeritos.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/numeritos.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 2.07822, 5.61609 )
+
+[node name="Numeritos" type="Position2D"]
+
+position = Vector2( -98.6248, 119.562 )
+script = ExtResource( 1 )
+
+[node name="Numero1" type="StaticBody2D" parent="." index="0" groups=[
+"numero",
+]]
+
+editor/display_folded = true
+position = Vector2( -1.10196, -32.5076 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="Numero1" index="0"]
+
+position = Vector2( 3.15031, 0.963558 )
+scale = Vector2( 1.45004, 1.50535 )
+texture = ExtResource( 2 )
+vframes = 7
+_sections_unfolded = [ "Animation" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Numero1" index="1"]
+
+position = Vector2( -6.06075, 1.65293 )
+shape = SubResource( 1 )
+
+[node name="Numero2" type="StaticBody2D" parent="." index="1" groups=[
+"numero",
+]]
+
+editor/display_folded = true
+position = Vector2( -1.10196, -20.3861 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="Numero2" index="0"]
+
+position = Vector2( 3.15031, 0.963558 )
+scale = Vector2( 1.45004, 1.50535 )
+texture = ExtResource( 2 )
+vframes = 7
+frame = 1
+_sections_unfolded = [ "Animation" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Numero2" index="1"]
+
+position = Vector2( -6.06075, 1.65293 )
+shape = SubResource( 1 )
+
+[node name="Numero3" type="StaticBody2D" parent="." index="2" groups=[
+"numero",
+]]
+
+editor/display_folded = true
+position = Vector2( -1.10196, -8.26464 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="Numero3" index="0"]
+
+position = Vector2( 3.15031, 0.963558 )
+scale = Vector2( 1.45004, 1.50535 )
+texture = ExtResource( 2 )
+vframes = 7
+frame = 2
+_sections_unfolded = [ "Animation" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Numero3" index="1"]
+
+position = Vector2( -6.06075, 1.65293 )
+shape = SubResource( 1 )
+
+[node name="Numero4" type="StaticBody2D" parent="." index="3" groups=[
+"numero",
+]]
+
+editor/display_folded = true
+position = Vector2( -1.10196, 3.58134 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="Numero4" index="0"]
+
+position = Vector2( 3.15031, 0.963558 )
+scale = Vector2( 1.45004, 1.50535 )
+texture = ExtResource( 2 )
+vframes = 7
+frame = 3
+_sections_unfolded = [ "Animation" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Numero4" index="1"]
+
+position = Vector2( -6.06075, 1.65293 )
+shape = SubResource( 1 )
+
+[node name="Numero5" type="StaticBody2D" parent="." index="4" groups=[
+"numero",
+]]
+
+editor/display_folded = true
+position = Vector2( -1.10196, 15.7028 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="Numero5" index="0"]
+
+position = Vector2( 3.15031, 0.963558 )
+scale = Vector2( 1.45004, 1.50535 )
+texture = ExtResource( 2 )
+vframes = 7
+frame = 4
+_sections_unfolded = [ "Animation" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Numero5" index="1"]
+
+position = Vector2( -6.06075, 1.65293 )
+shape = SubResource( 1 )
+
+[node name="Numero6" type="StaticBody2D" parent="." index="5" groups=[
+"numero",
+]]
+
+editor/display_folded = true
+position = Vector2( -1.10196, 27.8243 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="Numero6" index="0"]
+
+position = Vector2( 3.15031, 0.963558 )
+scale = Vector2( 1.45004, 1.50535 )
+texture = ExtResource( 2 )
+vframes = 7
+frame = 5
+_sections_unfolded = [ "Animation" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Numero6" index="1"]
+
+position = Vector2( -6.06075, 1.65293 )
+shape = SubResource( 1 )
+
+[node name="Numero7" type="StaticBody2D" parent="." index="6" groups=[
+"numero",
+]]
+
+editor/display_folded = true
+position = Vector2( -1.10196, 39.9458 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="Sprite" type="Sprite" parent="Numero7" index="0"]
+
+position = Vector2( 3.15031, 0.963558 )
+scale = Vector2( 1.45004, 1.50535 )
+texture = ExtResource( 2 )
+vframes = 7
+frame = 6
+_sections_unfolded = [ "Animation" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Numero7" index="1"]
+
+position = Vector2( -6.06075, 1.65293 )
+shape = SubResource( 1 )
+
+
